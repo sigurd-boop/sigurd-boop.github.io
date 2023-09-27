@@ -16,7 +16,7 @@ body {
   width: 100%;
   height: 100%;
   /*Skroll oppførsel!*/
-  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
