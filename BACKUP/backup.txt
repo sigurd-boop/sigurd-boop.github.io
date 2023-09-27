@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badstueksperten</title>
+    <title>Badstueksperten smooth scroll</title>
     <link rel="stylesheet" href="/style.css" />
-  </head>
-  <style>
+    <style>
       /* Add your CSS here */
 
       /* Reset some default styles */
@@ -63,34 +62,43 @@
 
       /* Sections */
       section {
-        background-attachment: fixed;
-        position: relative;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end; /* Push content to the bottom */
+        justify-content: center;
         text-align: center;
         width: 100%;
-        height: 100vh;
         padding: 2rem; /* Add some padding for better readability */
       }
 
       section h1 {
-        font-size: 3rem; /* Smaller font size */
+        font-size: 4rem;
       }
 
       section p {
-        font-size: 1.2rem; /* Smaller font size */  
+        font-size: 1.5rem;
       }
 
       /* Background images for sections */
       section#home {
-        background: url("/images/pexels-jeswin-thomas-2874752.jpg") no-repeat center center fixed;
-        background-size: cover;
+        background: url("/images/pexels-jeswin-thomas-2874752.jpg") no-repeat
+          center center/cover;
       }
 
-      /* ... (other section backgrounds) ... */
+      section#omoss {
+        background: url("/images/pexels-tim-mossholder-3578592.jpg") no-repeat
+          center center/cover;
+      }
+
+      section#kontaktoss {
+        background: url("/images/pexels-irina-iriser-1420008.jpg") no-repeat
+          center center/cover;
+      }
+
+      section#produkter {
+        background: url("/images/pexels-pixabay-355802.jpg") no-repeat center
+          center/cover;
+      }
 
       /* Additional styling for small screens */
       @media (max-width: 768px) {
@@ -124,64 +132,40 @@
       </nav>
 
       <section id="home">
-        <div class="background-image">
-          <!-- Background image content her -->
-        </div>
-        <div class="content">
-          <!-- Content (welcome text) her -->
-          <h1>Badstueksperten</h1>
-          <p>
-            (Det som heter lorem er eksempeltekst)Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Enim ea repellendus dolorem id non
-            quasi.
-          </p>
-          <p class="test">
-            Grunnet stor pågang for tiden, er nettsiden under utvikling. Du ser
-            deg nødvendig å vente litt for neste oppdatering, men plutselig er den
-            her. Imens du venter kan du jo kose deg med en baby-bell, ofte omtalt
-            som verdens beste ost, også av selveste Osteguden (Også kjent som
-            Scott).
-          </p>
-        </div>
+        <h1>Velkommen til Badstueksperten</h1>
+        <p>
+          (Det som heter lorem er eksempeltekst)Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Enim ea repellendus dolorem id non
+          quasi.
+        </p>
+        <p class="test">
+          Grunnet stor pågang for tiden, er nettsiden under utvikling. Du ser
+          deg nødvendig å vente litt for neste oppdatering, men plutselig er den
+          her. Imens du venter kan du jo kose deg med en baby-bell, ofte omtalt
+          som verdens beste ost, også av selveste Osteguden (Også kjent som
+          Scott).
+        </p>
       </section>
       <section id="produkter">
-        <div class="background-image">
-          <!-- Background image content her -->
-        </div>
-        <div class="content">
-          <!-- Content her -->
-          <h1>Produkter</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
-            repellendus dolorem id non quasi.
-          </p>
-        </div>
+        <h1>Produkter</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
+          repellendus dolorem id non quasi.
+        </p>
       </section>
       <section id="omoss">
-        <div class="background-image">
-          <!-- Background image content her -->
-        </div>
-        <div class="content">
-          <!-- Content her -->
-          <h1>Om oss</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
-            repellendus dolorem id non quasi.
-          </p>
-        </div>
+        <h1>Om oss</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
+          repellendus dolorem id non quasi.
+        </p>
       </section>
       <section id="kontaktoss">
-        <div class="background-image">
-          <!-- Background image content her -->
-        </div>
-        <div class="content">
-          <!-- Content her -->
-          <h1>Kontakt oss</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
-            repellendus dolorem id non quasi.
-          </p>
-        </div>
+        <h1>Kontakt oss</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ea
+          repellendus dolorem id non quasi.
+        </p>
       </section>
     </div>
   </body>
