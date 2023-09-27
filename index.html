@@ -6,7 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badstueksperten smooth scroll</title>
     <link rel="stylesheet" href="/style.css" />
-    <script src="/main.js"></script>
+    <style>
+      /* Add your CSS here */
+
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Global styles */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333;
+        color: white;
+        line-height: 1.6;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+      }
+
+      /* Navigation bar */
+      .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color: #000000;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+      }
+
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .navbar ul li {
+        margin: 0 1rem;
+        padding: 1rem;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: lightgray;
+      }
+
+      .navbar ul li a:hover {
+        color: burlywood;
+      }
+
+      /* Sections */
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 2rem; /* Add some padding for better readability */
+      }
+
+      section h1 {
+        font-size: 4rem;
+      }
+
+      section p {
+        font-size: 1.5rem;
+      }
+
+      /* Background images for sections */
+      section#home {
+        background: url("/images/pexels-jeswin-thomas-2874752.jpg") no-repeat
+          center center/cover;
+      }
+
+      section#omoss {
+        background: url("/images/pexels-tim-mossholder-3578592.jpg") no-repeat
+          center center/cover;
+      }
+
+      section#kontaktoss {
+        background: url("/images/pexels-irina-iriser-1420008.jpg") no-repeat
+          center center/cover;
+      }
+
+      section#produkter {
+        background: url("/images/pexels-pixabay-355802.jpg") no-repeat center
+          center/cover;
+      }
+
+      /* Additional styling for small screens */
+      @media (max-width: 768px) {
+        .navbar {
+          height: auto;
+          padding: 1rem;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .navbar ul li {
+          margin: 0.5rem 0;
+          padding: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
